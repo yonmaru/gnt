@@ -644,8 +644,7 @@ sup {
     padding:64px 0 120px;
     position: relative;
 }
-.widget:after {
-    content:"";
+.widget a {
     display: block;
     position: absolute;
     top:0;
@@ -679,9 +678,15 @@ sup {
     position: relative;
 }
 .intro h4:after {
+    content: "";
+    display:block;
+    width:88px;
+    height:35px;
     position: absolute;
 	top: 50%;
 	left: -32px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
 	-webkit-transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-ms-transform: translate(0%, -50%);
@@ -689,32 +694,48 @@ sup {
 	transform: translate(0%, -50%);
 }
 .intro01 h4:after {
-    content: url(../img/top/icon1.png);
+    background-image: url(../img/top/icon1.png);
+    background-size: cover;
 }
 .intro02 h4:after {
-    content: url(../img/top/icon2.png);
+    background-image: url(../img/top/icon2.png);
+    background-size: cover;
 }
 .intro03 p {
     position: relative;
 }
 .intro03 p:after {
+    content: "";
+    display:block;
+    width:88px;
+    height:35px;
     position: absolute;
-	top: -16px;
+	top: 8px;
 	left: 16px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
 }
 .intro03 p.icon3:after {
-    content: url(../img/top/icon3.png);
+    background-image: url(../img/top/icon3.png);
+    background-size: cover;
 }
 .intro03 p.icon4:after {
-    content: url(../img/top/icon4.png);
+    background-image: url(../img/top/icon4.png);
+    background-size: cover;
 }
 .intro04 h4 {
     position: relative;
 }
 .intro04 h4:after {
+    content: "";
+    display:block;
+    width:88px;
+    height:35px;
     position: absolute;
 	top: 50%;
 	left: 360px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
 	-webkit-transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-ms-transform: translate(0%, -50%);
@@ -722,7 +743,8 @@ sup {
 	transform: translate(0%, -50%);
 }
 .intro04 h4:after {
-    content: url(../img/top/icon5.png);
+    background-image: url(../img/top/icon5.png);
+    background-size: cover;
 }
 
 
@@ -838,7 +860,10 @@ sup {
     color:inherit;
     font-size:0.875rem;
 }
-
+.googlemap-chs p {
+    text-align: right;
+    font-size:0.875rem;
+}
 
 /* morebtn */
 .more {

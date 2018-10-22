@@ -529,18 +529,6 @@ html {
         -o-transform: translate(0%, -50%);
         transform: translate(0%, -50%);
     }
-    .intro01 h4:after {
-        content: url(../img/top/icon1_sp.png);
-    }
-    .intro02 h4:after {
-        content: url(../img/top/icon2_sp.png);
-    }
-    .intro03 h4.icon3:after {
-        content: url(../img/top/icon3_sp.png);
-    }
-    .intro03 h4.icon4:after {
-        content: url(../img/top/icon4_sp.png);
-    }
     .intro04 h4:after {
         position: absolute;
         top: 50%;
@@ -551,9 +539,51 @@ html {
         -o-transform: translate(0%, -50%);
         transform: translate(0%, -50%);
     }
-    .intro04 h4:after {
-        content: url(../img/top/icon5_sp.png);
-    }
+
+.intro h4,
+.intro03 h4
+.intro04 h4 {
+    position: relative;
+}
+.intro h4:after,
+.intro03 h4:after,
+.intro04 h4:after {
+    content: "";
+    display:block;
+    width:56px;
+    height:22px;
+    position: absolute;
+	top: 50%;
+	left: -2%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
+.intro01 h4:after {
+    background-image: url(../img/top/icon1.png);
+    background-size: cover;
+}
+.intro02 h4:after {
+    background-image: url(../img/top/icon2.png);
+    background-size: cover;
+}
+.intro03 h4.icon3:after {
+    background-image: url(../img/top/icon3.png);
+    background-size: cover;
+}
+.intro03 h4.icon4:after {
+    background-image: url(../img/top/icon4.png);
+    background-size: cover;
+}
+.intro04 h4:after {
+    background-image: url(../img/top/icon5.png);
+    background-size: cover;
+}
+
 
 
 
