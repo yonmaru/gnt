@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* タブレット用CSS */
+.hidden-sp {
+	display:inherit !important;
+}
+.hidden-pc {
+	display: none !important;
+}
+
+
+#header {
+    position: absolute;
+}
+#header .inner {
+    padding:23px 40px;
+}
